@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D rigging</title>
+    <link rel="stylesheet" href="./bone.css" />
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+    <div class="stick-man walk">
+        <div class="root bone-attach">
+            <div class="bone">
+                <div class="joint joint-start">
+                    <div class="torso bone-attach-end">
+                        <div class="bone">
+                            <div class="joint joint-start">
+                                   <!-- Head -->
+                                <div class="head bone-attach">
+                                    <div class="bone">
+                                        <div class="joint joint-start"></div>
+                                        <div class="joint joint-end"></div>
+                                    </div>
+                                </div>
+                                <!-- Left Hand -->
+                                <div class="hand-left bone-attach">
+                                    <div class="bone">
+                                        <div class="joint joint-start"> </div>
+                                        <div class="joint joint-end">
+                                            <div class="hand-left-lower bone-attach">
+                                                <div class="bone">
+                                                    <div class="joint joint-start"></div>
+                                                    <div class="joint joint-end"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Right Hand -->
+                                <div class="hand-right bone-attach">
+                                    <div class="bone">
+                                        <div class="joint joint-start"> </div>
+                                        <div class="joint joint-end">
+                                            <div class="hand-right-lower bone-attach">
+                                                <div class="bone">
+                                                    <div class="joint joint-start"></div>
+                                                    <div class="joint joint-end"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="joint joint-end">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="joint joint-end">
+                      <!-- Left Leg -->
+                      <div class="leg-left bone-attach">
+                        <div class="bone">
+                            <div class="joint joint-start"></div>
+                            <div class="joint joint-end">
+                                <div class="leg-left-lower bone-attach">
+                                    <div class="bone">
+                                        <div class="joint joint-start"></div>
+                                        <div class="joint joint-end"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right Leg -->
+                    <div class="leg-right bone-attach">
+                        <div class="bone">
+                            <div class="joint joint-start"></div>
+                            <div class="joint joint-end">
+                                <div class="leg-right-lower bone-attach">
+                                    <div class="bone">
+                                        <div class="joint joint-start"></div>
+                                        <div class="joint joint-end"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+<!-- 
+<div class="bone">
+    <div class="joint joint-start"></div>
+    <div class="joint joint-end"></div>
+</div> 
+-->

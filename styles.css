@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  :root {
+    --walkDuration: 2s;
+    --torsoWidth: 100px;
+  }
+
+  
+  .root {
+    width: 30px;
+    transform: rotateZ(90deg);
+  }
+
+  .torso {
+    width: 100px;
+  }
+
+
+
+  /* Left Hand */
+  .hand-left {
+    width: 40px;
+  }
+  .hand-left-lower {
+    width: 50px;
+    transform: rotateZ(-20deg);
+  }
+
+  /* Right Hand */
+  .hand-right {
+    width: 40px;
+  }
+  .hand-right-lower {
+    width: 50px;
+    transform: rotateZ(-20deg);
+  }
+
+  /* Left Leg */
+  .leg-left {
+    width: 50px;
+    transform: rotateZ(20deg);
+  }
+  .leg-left-lower {
+    width: 60px;
+    transform: rotateZ(10deg);
+  }
+
+  /* Right Leg */
+  .leg-right {
+    width: 50px;
+    transform: rotateZ(-30deg);
+  }
+  .leg-right-lower {
+    width: 60px;
+    transform: rotateZ(5deg);
+  }
+  .head {
+    width: 40px;
+    transform: rotateZ(180deg);
+  }

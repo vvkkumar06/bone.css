@@ -1,0 +1,101 @@
+.bone {
+    height: 0;
+    width: 100%;
+    border: 5px solid #0af9;
+    border-radius: 50%;
+    position: relative;
+    box-sizing: border-box;
+  }
+  
+  .joint {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+  .joint-start {
+    left: calc(0px - 7.5px);
+    top: calc(50% - 7.5px);
+    border: 3px solid rgb(3, 133, 35);
+  }
+  .joint-end {
+    right: calc(0px - 7.5px);
+    top: calc(50% - 7.5px);
+    border: 3px solid rgb(168, 4, 4);
+  }
+  .bone-attach {
+    position: absolute;
+    transform-origin: 5px 5px;
+  }
+  .bone-attach-end {
+    position: absolute;
+    transform-origin: 5px 5px;
+    translate: calc(-100% + 10px)
+  }
+
+
+.walk .torso{
+   animation: reduceTorsoHeight var(--walkDuration) infinite linear;
+}
+
+@keyframes reduceTorsoHeight {
+    0%, 50%, 100% {
+        width: var(--torsoWidth);
+    } 
+    25%, 75% { 
+        width: calc(var(--torsoWidth) - 5px);
+    }
+}
+
+
+.walk .hand-left {
+    animation: moveLeftHand var(--walkDuration) infinite ease-out;
+}
+
+.walk .hand-right {
+    animation: moveRightHand var(--walkDuration) infinite ease-out;
+}
+
+.walk .leg-left {
+    animation: moveLeftLeg var(--walkDuration) infinite ease-out;
+}
+
+.walk .leg-right {
+    animation: moveRightLeg var(--walkDuration) infinite ease-out;
+}
+
+
+
+@keyframes moveLeftHand {
+    0%, 100% {
+        transform: rotateZ(-30deg);
+    }
+    50% {
+        transform: rotateZ(30deg);
+    }
+}
+@keyframes moveRightHand {
+    0%, 100% {
+        transform: rotateZ(30deg);
+    }
+    50% {
+        transform: rotateZ(-30deg);
+    }
+}
+@keyframes moveLeftLeg {
+    0%, 100% {
+        transform: rotateZ(20deg);
+    }
+    50% {
+        transform: rotateZ(-30deg);
+    }
+}
+@keyframes moveRightLeg {
+    0%, 100% {
+        transform: rotateZ(-30deg);
+    }
+    50% {
+        transform: rotateZ(20deg);
+    }
+}
